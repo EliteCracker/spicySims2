@@ -23,9 +23,15 @@
     "Dance",
     "Architecture",
     "Intelligence",
-    "Oceanography"
+    "Oceanography",
+    "Unemployed"
   ],
-  "pets": ["Dogs", "Cats", "Birds", "Guinea Pigs"],
+  "pets": [
+    "Dogs",
+    "Cats",
+    "Birds",
+    "Guinea Pigs"
+  ],
   "neighborhood": [
     "Belladonna Cove",
     "Desiderata Valley",
