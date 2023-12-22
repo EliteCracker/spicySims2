@@ -8,6 +8,7 @@
 # zodiac sign
 # aspiration
 # turn on and offs (turns in json)
+# added as test
 
 import json
 import random
