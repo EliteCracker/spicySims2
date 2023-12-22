@@ -5,7 +5,7 @@ import os
 # var `data` (dict) is the json data from the file
 # var `mainKeys` (array) is the top level keys from the json file
 
-# gets all top-level keys (variable `mainKeys``)
+# gets all top-level keys (variable `mainKeys`)
 def getKeys(jsonData):
     keys = []
     for key in jsonData.keys():
