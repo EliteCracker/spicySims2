@@ -1,6 +1,7 @@
 import json
 import random
 import os
+import time
 
 # var `data` (dict) is the json data from the file
 # var `mainKeys` (array) is the top level keys from the json file
@@ -35,7 +36,6 @@ def getTurns():
 
 # prsnly, this could be optimized. this took 15 minutes alone lol
 # Draws 5 random number points. Summed together, it equals 25. 
-# TODO: change range(len(points)) to using only the points array
 
 def getPersonality():
     points = []
@@ -46,9 +46,9 @@ def getPersonality():
             thru = random.randint(0,total)
             points.append(thru)
             total -= thru
-        for _ in range(len(points)):
-            sum += points[_]
-            if points[_] > 10:
+        for _ in points:
+            sum += _
+            if _ > 10:
                 break
         if len(points) == 5 and sum == 25:
             break
