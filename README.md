@@ -1,6 +1,4 @@
 # spicySims2 - A Way to Have Fun. Randomly
-<img src="{https%3A%2F%2Fimg.shields.io%2Fbadge%2FI_know_what-I%27m_doing_%3A%29-green}" />
-
 A new way to generate a custom family for fun challenges.
 ## Why?
 I was bored, and I needed something to create a variety of experiences to excite me. I also wanted to learn how to use Git as well as refresh my skills.
