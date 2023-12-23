@@ -104,5 +104,23 @@
     "plantsimism",
     "lycanthropy",
     "witchiness"
+  ],
+  "seasons":[
+    "Spring",
+    "Summer",
+    "Autumn",
+    "Winter",
+    "All"
+  ],
+  "simSpecies":[
+    "Alien",
+    "Bigfoot",
+    "Normal",
+    "Plant Sim",
+    "Servo",
+    "Vampire",
+    "Werewolf",
+    "Witch",
+    "Zombie"
   ]
 }
