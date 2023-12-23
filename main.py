@@ -8,11 +8,11 @@ import os
 # gets all top-level keys (variable `mainKeys`)
 def getKeys(jsonData):
     keys = []
-    for key in jsonData.keys():
-        if type(jsonData[key]) != dict:
-            keys.append(key)
+    for _ in jsonData.keys():
+        if type(jsonData[_]) != dict:
+            keys.append(_)
         else:
-            keys += getKeys(jsonData[key])
+            keys += getKeys(jsonData[_])
     return keys
 
 # Counts number of values a certain key has
@@ -35,6 +35,8 @@ def getTurns():
 
 # prsnly, this could be optimized. this took 15 minutes alone lol
 # Draws 5 random number points. Summed together, it equals 25. 
+# TODO: change range(len(points)) to using only the points array
+
 def getPersonality():
     points = []
     while True:
@@ -44,8 +46,10 @@ def getPersonality():
             thru = random.randint(0,total)
             points.append(thru)
             total -= thru
-        for x in range(len(points)):
-            sum += points[x]
+        for _ in range(len(points)):
+            sum += points[_]
+            if points[_] > 10:
+                break
         if len(points) == 5 and sum == 25:
             break
         else:
@@ -71,8 +75,8 @@ def main():
         # Specific personality block.
         if key == "personality":
             points = getPersonality()
-            for x in random.sample(range(0,5), k=5):
-                print(f"{data[key][x]}: {points[x]}")
+            for _ in random.sample(range(0,5), k=5):
+                print(f"{data[key][_]}: {points[_]}")
             continue
         # Every other key block
         print(f"{key}: {data[key][random.randint(0, countValues(key))]}")
